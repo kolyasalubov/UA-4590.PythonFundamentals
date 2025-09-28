@@ -2,7 +2,7 @@ Zen of Python
 
 1.VolodymyrOleshchuk
 2.Rom14ik
-3.VladaMoskvych
+3.Simple is better than complex.
 4.Complex is better than complicated.
 5.lazydady
 6.Volhanch
