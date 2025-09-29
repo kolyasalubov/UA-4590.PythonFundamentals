@@ -6,7 +6,7 @@ Zen of Python
 4.Complex is better than complicated.
 5.lazydady
 6.Volhanch
-7.Cashier88
+7.Readability counts.
 8.goosepinggg201
 9.SophiaBoyko
 10.Vlantt
