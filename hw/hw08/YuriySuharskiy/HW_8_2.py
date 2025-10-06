@@ -1,3 +1,5 @@
+import re
+
 password = input("Enter your password: ")
 
 def check_password(password):
@@ -9,18 +11,17 @@ def check_password(password):
     4. must contain at least one digit (0-9);
     5. must contain at least one special character from the set: $#@
     """
-    special_characters = "$#@"
     if len(password) < 6:
         return "Password is too short!"
-    if len(password) > 16:
+    elif len(password) > 16:
         return "Password is too long!"
-    if not any(i.islower() for i in password):
+    elif not re.search("[a-z]", password):
         return "Password must contain a lowercase letter"
-    if not any(i.isupper() for i in password):
+    elif not re.search("[A-Z]", password):
         return "Password must contain a uppercase letter"
-    if not any(i.isdigit() for i in password):
+    elif not re.search("[0-9]", password):
         return "Password must contain a digit"
-    if not any(i in special_characters for i in password):
+    elif not re.search("[$#@]", password):
         return "Password must contain a special character"
     return "Your password is valid"
 
