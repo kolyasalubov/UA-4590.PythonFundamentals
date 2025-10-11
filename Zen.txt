@@ -8,7 +8,7 @@ Zen of Python
 6.Volhanch
 7.Readability counts.
 8.Special cases aren't special enough to break the rules.
-9.SophiaBoyko
+9.Although practicality beats purity.
 10.Vlantt
 11.Unless explicitly silenced.
 12.MarinaaLys
