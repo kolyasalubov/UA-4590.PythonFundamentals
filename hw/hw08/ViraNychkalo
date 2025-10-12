@@ -1,0 +1,19 @@
+import re
+
+parol = input("Введіть пароль:")
+
+result_1 = re.findall("[a-z]", parol)
+result_2 = re.findall("[A-Z]", parol)
+result_3 = re.findall(r"\d", parol)
+result_4 = re.findall(r"[$#@]", parol)
+
+if (
+    len(parol) >= 6 and len(parol) <= 16 and
+    result_1 and result_2 and result_3 and result_4
+):
+    print("Ви успішно зареєструвалися!")
+else:
+    print("Пароль не відповідає вимогам: \n-повинна міститися одна мала літера [a-z]," \
+    "\n-повинна міститися хоча б одна велика літера [A-Z]," \
+    "\n-повинна міститися хоча б одна цифра [0-9]," \
+    "\n-повинна міститися хоча б один спецсимвол $#@")
